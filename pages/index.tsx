@@ -8,23 +8,7 @@ import styles from '../styles/Home.module.css'
 
 
 const Home: NextPage = () => {
-  let [ content, setContent ] = useState('');
-  
-  const handleClick: Function = (option: String) => {
-    switch(option) {
-      case 'about':
-        setContent('Hi. This is my portfolio. I hope you like it. We can be friends. :)');
-        break;
-      case 'works':
-        setContent('I\'ve made things out of things before. :)');
-        break;
-      case 'contact':
-        setContent('Here is my email. It is gregorny@mylanta.gov. :)');
-        break;
-      default:
-        break;
-    }
-  }
+  let [ content, setContent ] = useState('about');
 
   return (
     <div className={styles.siteContainer}>
@@ -33,7 +17,7 @@ const Home: NextPage = () => {
           <Image className={styles.profilePic} src="/images/profile.jpg" alt="profile" width="300px" height="300px" />
         </div>
         <div className={styles.infoContainer}>
-          <Navbar handleClick={handleClick} />
+          <Navbar setContent={setContent} />
           <TextContainer content={content}/>
         </div>
       </main>
