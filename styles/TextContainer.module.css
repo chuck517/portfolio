@@ -5,6 +5,7 @@
   height: 40vh;
   width: 75vw;
   border-radius: 3px;
-  box-shadow: 0 10px 10px #555555bb;
-  background-color: #ffffffbb;
+  box-shadow: 0 10px 10px #55555555;
+  background-image: linear-gradient(to top, #ffffff66, #ffffffaa, #ffffffee);
+  /* background-color: #ffffffbb; */
 }

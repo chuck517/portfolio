@@ -1,6 +1,7 @@
 .navMenu {
   margin: 0;
   padding: 0;
+  padding-top: 5px;
   margin-top: 15px;
   display: flex;
   flex-direction: row;
@@ -20,7 +21,8 @@
   background-color: #bbbbbbbb;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
-  box-shadow: 0 0 10px #555555bb;
+  box-shadow: 0 -5px 4px #00000022;
+  z-index: 0;
   transition: ease-in-out 250ms;
 }
 
@@ -28,22 +30,26 @@
   cursor: pointer;
   background-color: #dddddddd;
   font-weight: bolder;
-  box-shadow: 0 -5px 4px #00000055;
-  transition: border 0ms;
+  box-shadow: 0 -5px 4px #00000033;
+  z-index: 1;
   transition: ease-in-out 250ms;
-  transform: scaleY(120%) translateY(-8%);
+  transform: scaleY(120%);
+  transform-origin: 50% 100%;
 }
 
 .navButtonSelected {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
   display: inherit;
   justify-content: center;
   align-items: center;
   height: 50px;
   width: 20vw;
-  background-color: #ffffffbb;
+  background-image: linear-gradient(to bottom, #ffffff88, #ffffffcc, #ffffffee);
+  /* background-color: #ffffffbb; */
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
-  box-shadow: 0 -5px 4px #00000055;
+  box-shadow: 0 -5px 4px #00000022;
+  z-index: 2;
   transition: ease-in-out 250ms;
 }
