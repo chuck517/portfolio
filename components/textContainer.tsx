@@ -1,9 +1,9 @@
 import styles from '../styles/Home.module.css';
 
-type Content = 'about' | 'works' | 'contact';
+// type Content = 'about' | 'works' | 'contact';
 
 interface TextContainerProps {
-  content: Content
+  content: String
 }
 
 const TextContainer = ({ content }: TextContainerProps) => {
