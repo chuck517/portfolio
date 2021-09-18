@@ -4,10 +4,7 @@
   justify-content: center;
   height: 40vh;
   width: 75vw;
-  border-width: 1px;
-  border-style: solid;
-  border-top: none;
-  border-image: linear-gradient(to right, #00000000, #000000c0, #00000000) 1;
-  /* background-image: linear-gradient(to right, #00000000, #ffffff60, #ffffffad, #ffffffb9, #ffffffad, #ffffff60, #00000000); */
+  border-radius: 3px;
+  box-shadow: 0 10px 10px #555555bb;
   background-color: #ffffffbb;
 }

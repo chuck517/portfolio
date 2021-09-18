@@ -10,9 +10,9 @@ const Navbar = ({ content, setContent }: NavbarProps) => {
   return (
     <div>
       <ul className={content ? styles.navMenu : styles.navMenuEmpty}>
-        <li className={content ? styles.navButton : styles.navButtonEmpty} onClick={() => setContent('about')}>About</li>
-        <li className={content ? styles.navButton : styles.navButtonEmpty} onClick={() => setContent('works')}>Works</li>
-        <li className={content ? styles.navButton : styles.navButtonEmpty} onClick={() => setContent('contact')}>Contact</li>
+        <li className={content == 'works' ? styles.navButtonSelected : styles.navButton} onClick={() => setContent('works')}>Works</li>
+        <li className={content == 'about' ? styles.navButtonSelected : styles.navButton} onClick={() => setContent('about')}>About</li>
+        <li className={content == 'contact' ? styles.navButtonSelected : styles.navButton} onClick={() => setContent('contact')}>Contact</li>
       </ul>
     </div>
   )
