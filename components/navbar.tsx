@@ -1,6 +1,10 @@
 import styles from '../styles/Home.module.css';
 
-const Navbar = ({ handleClick }) => {
+interface NavbarProps {
+  handleClick: Function
+}
+
+const Navbar = ({ handleClick }: NavbarProps) => {
   return (
     <div>
       <ul className={styles.navMenu}>
