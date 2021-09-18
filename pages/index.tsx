@@ -7,7 +7,7 @@ import TextContainer from '../components/textContainer';
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
-  let [ content, setContent ] = useState('about');
+  let [ content, setContent ] = useState('');
 
   return (
     <div className={styles.siteContainer}>
@@ -16,7 +16,7 @@ const Home: NextPage = () => {
           <Image className={styles.profilePic} src="/images/profile.jpg" alt="profile" width="300px" height="300px" />
         </div>
         <div className={styles.infoContainer}>
-          <Navbar setContent={setContent} />
+          <Navbar content={content} setContent={setContent} />
           <TextContainer content={content}/>
         </div>
       </main>

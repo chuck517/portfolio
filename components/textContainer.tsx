@@ -24,7 +24,7 @@ const TextContainer = ({ content }: TextContainerProps) => {
 
   return (
     <div>
-      <div className={styles.mainTextContainer}>
+      <div className={textToDisplay ? styles.mainTextContainer : styles.mainTextContainerEmpty}>
         {textToDisplay}
       </div>
     </div>

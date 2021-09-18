@@ -1,17 +1,18 @@
 import styles from '../styles/Navbar.module.css';
 
 interface NavbarProps {
+  content: String,
   setContent: Function
 }
 
 
-const Navbar = ({ setContent }: NavbarProps) => {  
+const Navbar = ({ content, setContent }: NavbarProps) => {  
   return (
     <div>
-      <ul className={styles.navMenu}>
-        <li className={styles.navButton} onClick={() => setContent('about')}>About</li>
-        <li className={styles.navButton} onClick={() => setContent('works')}>Works</li>
-        <li className={styles.navButton} onClick={() => setContent('contact')}>Contact</li>
+      <ul className={content ? styles.navMenu : styles.navMenuEmpty}>
+        <li className={content ? styles.navButton : styles.navButtonEmpty} onClick={() => setContent('about')}>About</li>
+        <li className={content ? styles.navButton : styles.navButtonEmpty} onClick={() => setContent('works')}>Works</li>
+        <li className={content ? styles.navButton : styles.navButtonEmpty} onClick={() => setContent('contact')}>Contact</li>
       </ul>
     </div>
   )
