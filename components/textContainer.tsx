@@ -1,4 +1,4 @@
-import styles from '../styles/Home.module.css';
+import styles from '../styles/TextContainer.module.css';
 
 interface TextContainerProps {
   content: String

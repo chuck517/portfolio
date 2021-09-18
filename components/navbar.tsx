@@ -1,4 +1,4 @@
-import styles from '../styles/Home.module.css';
+import styles from '../styles/Navbar.module.css';
 
 interface NavbarProps {
   setContent: Function
