@@ -6,7 +6,6 @@ import Navbar from '../components/navbar';
 import TextContainer from '../components/textContainer';
 import styles from '../styles/Home.module.css'
 
-
 const Home: NextPage = () => {
   let [ content, setContent ] = useState('about');
 
