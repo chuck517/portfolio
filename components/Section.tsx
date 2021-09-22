@@ -1,8 +1,18 @@
 import { NextComponentType } from "next";
-import Image from 'next/image';
 import styles from '../styles/Section.module.css';
 
-const Section: NextComponentType = ({ section }: any) => {
+type SectionType = {
+  id: number,
+  title: string,
+  body: string,
+  background: string,
+}
+
+interface SectionPropsType {
+  section: SectionType,
+}
+
+const Section = ({ section }: SectionPropsType) => {
   const { body } = section;
   return (
     <>
