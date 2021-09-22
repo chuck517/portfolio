@@ -1,34 +1,52 @@
-.navbar {
-  position: sticky;
-  top: 0;
+.navButton {
   display: flex;
-  width: 100%;
-  height: 5vh;
-  background: #000;
-  color: #fff;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  bottom: 10vh;
+  height: 3rem;
+  width: 2rem;
+  box-shadow: 0 0 10px black;
+  border-bottom-left-radius: 2rem;
+  border-top-left-radius: 1.5rem;
+  background: #dddddd99;
+  position: absolute;
+  z-index: 15;
+  transition: ease-in-out 500ms;
+  transition: width ease-in-out 250ms;
 }
 
-.menu {
-  width: 15vw;
-  padding: 0 1rem;
+.navButton:hover {
+  width: 27.5rem;
+  transform: scaleY(1.1);
+  background: #eaeaeaaa;
+  transition: ease-in-out 500ms;
+  transition: width ease-in-out 250ms;
+}
+
+.navMenu {
   display: inherit;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
   list-style: none;
 }
 
-.menu li {
-  height: 5vh;
-  width: 80%;
-  display: inherit;
-  justify-content: center;
-  align-items: center;
-  transition: ease-in-out 125ms;
+.navOption {
+  font-size: 2rem;
+  height: 3rem;
+  margin: 0 0.25rem;
+  padding: 0 0.5rem;
 }
 
-.menu li:hover {
+.navOption:hover {
   cursor: pointer;
-  background: #222;
-  transition: ease-in-out 125ms;
+  background: #eeeeeebb;
+  border-radius: 0.25rem;
+}
+
+.navIcon {
+  font-weight: bolder;
+  font-size: 75%;
+  flex: 1;
+  transform: rotate(-90deg);
 }
