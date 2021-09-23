@@ -31,7 +31,6 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  filter: saturate(0.5);
 }
 
 .cardText {
@@ -44,7 +43,7 @@
   height: 60vh;
   font-size: 4vw;
   color: #000;
-  z-index: 5;
+  z-index: 1;
 }
 
 .filter {
