@@ -1,24 +1,6 @@
-<<<<<<< HEAD
-import { NextComponentType } from "next";
-import styles from '../styles/Section.module.css';
-
-type SectionType = {
-  id: number,
-  title: string,
-  body: string,
-  background: string,
-}
-
-interface SectionPropsType {
-  section: SectionType,
-}
-
-const Section = ({ section }: SectionPropsType) => {
-=======
 import styles from '../styles/Section.module.css';
 
 const Section = ({ section }: any) => {
->>>>>>> development-ver2
   const { body } = section;
   return (
     <>
