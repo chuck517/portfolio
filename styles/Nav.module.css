@@ -11,7 +11,6 @@
   border-bottom-left-radius: 2rem;
   border-top-left-radius: 1.5rem;
   background: #dddddd99;
-  position: absolute;
   z-index: 15;
   transition: ease-in-out 500ms;
   transition: width ease-in-out 250ms;
@@ -26,8 +25,8 @@
 }
 
 .navMenu {
+  position: absolute;
   display: inherit;
-  flex-direction: row;
   list-style: none;
 }
 
@@ -49,4 +48,10 @@
   font-size: 75%;
   flex: 1;
   transform: rotate(-90deg);
+}
+
+@media screen and (max-width: 768px) {
+  .navButton {
+    display: none;
+  }
 }
