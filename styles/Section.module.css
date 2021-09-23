@@ -1,16 +1,24 @@
 .headerBar {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
-  padding: 0 2rem;
   font-size: 2.5rem;
   display: flex;
-  height: 4rem;
+  height: 0rem;
   justify-content: flex-start;
-  align-items: center;
-  background-color: black;
+  /* background-color: black; */
   color: whitesmoke;
-  box-shadow: 0px 0px 20px black;
+  box-shadow: 0px 0px 2px black;
   font-style: oblique;
+}
+
+.headerBar div {
+  padding: 0 2rem;
+  display: inherit;
+  align-items: center;
+  height: 4rem;
+  width: 100%;
+  background: black;
 }
 
 .card {
@@ -23,13 +31,27 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  border: 1px solid #bbbbbb88;
+  filter: saturate(0.5);
 }
 
 .cardText {
-  width: 60vw;
+  padding: 0 5vw;
+  display: flex;
+  align-items: center;
+  background: #d0d0d0dd;
+  border-radius: 3px; 
+  width: auto;
+  height: 60vh;
   font-size: 4vw;
-  color: #fff;
-  text-shadow: 2px 2px 5px #ffffff88;
-  text-align: center;
+  color: #000;
+  z-index: 5;
+}
+
+.filter {
+  position: absolute;
+  top: 100;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: #44444499;
 }

@@ -1,4 +1,5 @@
 .pictureContainer {
+  display: none;
   top: 2vh;
   right: 1vw;
   width: 15vw;
