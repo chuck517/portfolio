@@ -31,6 +31,7 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  filter: saturate(0.75);
 }
 
 .cardText {
