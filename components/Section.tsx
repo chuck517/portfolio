@@ -1,8 +1,9 @@
 import styles from '../styles/Section.module.css';
 
-const Section = ({ section }: any) => {
+const Section = ({ section, sticky }: any) => {
   const { body } = section;
   let sectionColor;
+
   switch (section.id) {
     case 0:
       sectionColor = '#8ff80055';
@@ -16,6 +17,7 @@ const Section = ({ section }: any) => {
     default:
       sectionColor = '#ffffff44';
   }
+
   return (
     <>
       <div
@@ -26,7 +28,7 @@ const Section = ({ section }: any) => {
       </div>
       <div
         id={section.title}
-        className={styles.card}
+        className={!sticky ? styles.card : styles.cardSticky}
         style={{
           backgroundImage: `linear-gradient(${sectionColor}, ${sectionColor}), url(${section.background})`,
         }}
