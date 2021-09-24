@@ -31,14 +31,14 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  filter: saturate(0.75);
+  filter: saturate(0.85);
 }
 
 .cardText {
   padding: 0 5vw;
   display: flex;
   align-items: center;
-  background: #d0d0d0dd;
+  background: #d0d0d0aa;
   border-radius: 3px; 
   width: auto;
   height: 60vh;

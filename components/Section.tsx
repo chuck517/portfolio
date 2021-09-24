@@ -5,13 +5,13 @@ const Section = ({ section }: any) => {
   let sectionColor;
   switch (section.id) {
     case 0:
-      sectionColor = '#ff000055';
+      sectionColor = '#8ff80055';
       break;
     case 1:
-      sectionColor = '#00ff0055';
+      sectionColor = '#008ff855';
       break;
     case 2:
-      sectionColor = '#0000ff55';
+      sectionColor = '#f8008f55';
       break;
     default:
       sectionColor = '#ffffff44';
